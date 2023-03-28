@@ -1,0 +1,1251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1758CDE2-2ED6-47CF-B5C3-4B38E14C6DE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication3</RootNamespace>
+    <AssemblyName>WindowsFormsApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\..\Controles para C·\MetroFramework\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIDC">
+      <HintPath>..\..\..\Raul XD\UTEQ\UTEQ 3 SEMESTRE\Materias\Base de Datos\Proyecto\AUIDC1.2.52.0\UIDC.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\cConexion.cs" />
+    <Compile Include="Clases\csEmpleado.cs" />
+    <Compile Include="Clases\csUsuarios.cs" />
+    <Compile Include="Clases\csValidarCampos.cs" />
+    <Compile Include="Clases\csVeterinaria.cs" />
+    <Compile Include="Clases\csProveedor.cs" />
+    <Compile Include="Clases\csClientes.cs" />
+    <Compile Include="Clases\csEspecie_Raza_Animal.cs" />
+    <Compile Include="Clases\csPaciente.cs" />
+    <Compile Include="Clases\csCitas.cs" />
+    <Compile Include="Clases\csListarCitas.cs" />
+    <Compile Include="Clases\csListar_Citas_Inicio.cs" />
+    <Compile Include="Clases\csHistorial_Clinico.cs" />
+    <Compile Include="Clases\csCategoriasProductos.cs" />
+    <Compile Include="Clases\csUsernmanes.cs" />
+    <Compile Include="Clases\csCompraProductos.cs" />
+    <Compile Include="Clases\csBuscar_Clinete_Cedula.cs" />
+    <Compile Include="Clases\csFactura.cs" />
+    <Compile Include="Clases\csProductos.cs" />
+    <Compile Include="Clases\csIVA.cs" />
+    <Compile Include="Clases\csListar_IVA_DATAGRID.cs" />
+    <Compile Include="Clases\csLISTAR_PRODUCTOS_PARA_COMBOS.cs" />
+    <Compile Include="Clases\csMedicamentos.cs" />
+    <Compile Include="Clases\csOfertas.cs" />
+    <Compile Include="csListarDetalleCombo.cs" />
+    <Compile Include="csNUMERO_FACTURAS.cs" />
+    <Compile Include="csRecetaMedica.cs" />
+    <Compile Include="csRecintos.cs" />
+    <Compile Include="cs_Novedades_Para_el_dia.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Analitycs_TOP_25_PRODUCTOS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Analitycs_TOP_25_PRODUCTOS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Comprobante_Recepcion_Producto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Comprobante_Recepcion_Producto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_CRUZADA_POR_TIPOS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_CRUZADA_POR_TIPOS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_ESTADISTICA_CITAS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ESTADISTICA_CITAS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_FACTURA_ELECTRONICA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_FACTURA_ELECTRONICA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_HISTORIA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_HISTORIA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Historial_Clinico.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Historial_Clinico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Historia_Clinica_Nuevo_Mejorada.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Historia_Clinica_Nuevo_Mejorada.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_RECEPCION_PRODUCTOS_FACTURA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_RECEPCION_PRODUCTOS_FACTURA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_RECETA_NUEVA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_RECETA_NUEVA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Registrar_Historial_Clinico.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Registrar_Historial_Clinico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_REPECION_COMPRAS_CRUZADA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_REPECION_COMPRAS_CRUZADA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_TOP_5_POR_TIPOS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_TOP_5_POR_TIPOS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_TOP_General.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_TOP_General.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_VENTAS_CRUZADAS_POR_AÑOS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_VENTAS_CRUZADAS_POR_AÑOS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fmr_RECETA_VER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmr_RECETA_VER.Designer.cs">
+      <DependentUpon>fmr_RECETA_VER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\fmr_MisDatos_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\fmr_MisDatos_Usuario.Designer.cs">
+      <DependentUpon>fmr_MisDatos_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RECEPCION_PRODUCTOS_CRUZADA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RECEPCION_PRODUCTOS_CRUZADA.Designer.cs">
+      <DependentUpon>Form_RECEPCION_PRODUCTOS_CRUZADA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAJUSTES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAJUSTES.Designer.cs">
+      <DependentUpon>frmAJUSTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Clientes\frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Clientes\frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Clientes\frmCliente_Agregar-Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Clientes\frmCliente_Agregar-Modificar.Designer.cs">
+      <DependentUpon>frmCliente_Agregar-Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Historia_Clinica\frm_Accion_Historia_Clinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Historia_Clinica\frm_Accion_Historia_Clinica.Designer.cs">
+      <DependentUpon>frm_Accion_Historia_Clinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Citas\frm_Agregar_Cita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Citas\frm_Agregar_Cita.Designer.cs">
+      <DependentUpon>frm_Agregar_Cita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frmCompra_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frmCompra_Productos.Designer.cs">
+      <DependentUpon>frmCompra_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCombos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCombos.Designer.cs">
+      <DependentUpon>frmCombos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrearRecetaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearRecetaMedica.Designer.cs">
+      <DependentUpon>frmCrearRecetaMedica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrear_Modiciar_Medicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrear_Modiciar_Medicamento.Designer.cs">
+      <DependentUpon>frmCrear_Modiciar_Medicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatos_Veterinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatos_Veterinaria.Designer.cs">
+      <DependentUpon>frmDatos_Veterinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturacion.Designer.cs">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frmNuevoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frmNuevoProducto.Designer.cs">
+      <DependentUpon>frmNuevoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frmServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frmServicios.Designer.cs">
+      <DependentUpon>frmServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frmServicios_Agregar_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frmServicios_Agregar_Modificar.Designer.cs">
+      <DependentUpon>frmServicios_Agregar_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Notificaciones\frm_Ayuda_FDTGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Notificaciones\frm_Ayuda_FDTGV.Designer.cs">
+      <DependentUpon>frm_Ayuda_FDTGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_Configuracion.Designer.cs">
+      <DependentUpon>frm_Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_config_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_config_Usuarios.Designer.cs">
+      <DependentUpon>frm_config_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Pacientes\frm_Especies_Razas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Pacientes\frm_Especies_Razas.Designer.cs">
+      <DependentUpon>frm_Especies_Razas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Clientes\frm_MC_Crear-Modificar_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Clientes\frm_MC_Crear-Modificar_Cliente.Designer.cs">
+      <DependentUpon>frm_MC_Crear-Modificar_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Citas\frm_Citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Citas\frm_Citas.Designer.cs">
+      <DependentUpon>frm_Citas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Citas\frm_Cita_Pospuesta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Citas\frm_Cita_Pospuesta.Designer.cs">
+      <DependentUpon>frm_Cita_Pospuesta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Citas\frm_Cita_Terminada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Citas\frm_Cita_Terminada.Designer.cs">
+      <DependentUpon>frm_Cita_Terminada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Citas\frm_Editar_CIta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Citas\frm_Editar_CIta.Designer.cs">
+      <DependentUpon>frm_Editar_CIta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_Editar_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_Editar_Usuario.Designer.cs">
+      <DependentUpon>frm_Editar_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Historia_Clinica\frm_Historia_Clinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Historia_Clinica\frm_Historia_Clinica.Designer.cs">
+      <DependentUpon>frm_Historia_Clinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Menu\frm_MC_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Menu\frm_MC_Inicio.Designer.cs">
+      <DependentUpon>frm_MC_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\frm_MC_Modificar-CrearProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\frm_MC_Modificar-CrearProveedor.Designer.cs">
+      <DependentUpon>frm_MC_Modificar-CrearProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Personal\frm_MC_Modificar-Crear_Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Personal\frm_MC_Modificar-Crear_Personal.Designer.cs">
+      <DependentUpon>frm_MC_Modificar-Crear_Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Pacientes\frm_MC_Paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Pacientes\frm_MC_Paciente.Designer.cs">
+      <DependentUpon>frm_MC_Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Pacientes\frm_MC_Paciente_Agregar_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Pacientes\frm_MC_Paciente_Agregar_Modificar.Designer.cs">
+      <DependentUpon>frm_MC_Paciente_Agregar_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_MC_Permisos_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_MC_Permisos_Usuarios.Designer.cs">
+      <DependentUpon>frm_MC_Permisos_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Personal\frm_MC_Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Personal\frm_MC_Personal.Designer.cs">
+      <DependentUpon>frm_MC_Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frm_Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frm_Categorias.Designer.cs">
+      <DependentUpon>frm_Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJAULAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJAULAS.Designer.cs">
+      <DependentUpon>frmJAULAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListar_Empleados_Receta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListar_Empleados_Receta.Designer.cs">
+      <DependentUpon>frmListar_Empleados_Receta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListar_Medicamentos_RECETA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListar_Medicamentos_RECETA.Designer.cs">
+      <DependentUpon>frmListar_Medicamentos_RECETA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMENU_IVAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMENU_IVAS.Designer.cs">
+      <DependentUpon>frmMENU_IVAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificar_Veterinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificar_Veterinaria.Designer.cs">
+      <DependentUpon>frmModificar_Veterinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNOVEDADES_DEL_DIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNOVEDADES_DEL_DIA.Designer.cs">
+      <DependentUpon>frmNOVEDADES_DEL_DIA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfertas_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOfertas_Productos.Designer.cs">
+      <DependentUpon>frmOfertas_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOPCION_RECETAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOPCION_RECETAS.Designer.cs">
+      <DependentUpon>frmOPCION_RECETAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecintos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecintos.Designer.cs">
+      <DependentUpon>frmRecintos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVACUNAScs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVACUNAScs.Designer.cs">
+      <DependentUpon>frmVACUNAScs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CITA_ESTADISTICA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CITA_ESTADISTICA.Designer.cs">
+      <DependentUpon>frm_CITA_ESTADISTICA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Comprobantes_Recepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Comprobantes_Recepcion.Designer.cs">
+      <DependentUpon>frm_Comprobantes_Recepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Detalles_de_combos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Detalles_de_combos.Designer.cs">
+      <DependentUpon>frm_Detalles_de_combos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FACTURA_ELECTRONICAXD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FACTURA_ELECTRONICAXD.Designer.cs">
+      <DependentUpon>frm_FACTURA_ELECTRONICAXD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Historia_Clinica_Nueva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Historia_Clinica_Nueva.Designer.cs">
+      <DependentUpon>frm_Historia_Clinica_Nueva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Listar_Paciente_Receta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Listar_Paciente_Receta.Designer.cs">
+      <DependentUpon>frm_Listar_Paciente_Receta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MC_Producto_Agregar-Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MC_Producto_Agregar-Editar.Designer.cs">
+      <DependentUpon>frm_MC_Producto_Agregar-Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frm_MC_Produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Productos\frm_MC_Produtos.Designer.cs">
+      <DependentUpon>frm_MC_Produtos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\frm_MC_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\frm_MC_Proveedores.Designer.cs">
+      <DependentUpon>frm_MC_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\ListarEmpleadoDGV.cs" />
+    <Compile Include="Clases\Listar_ProveedoresDGV.cs" />
+    <Compile Include="Clases\Listar_ClientesDGV.cs" />
+    <Compile Include="Clases\ListarRazas.cs" />
+    <Compile Include="Clases\ListasEspecies.cs" />
+    <Compile Include="Clases\Listar_PacientesDTGV.cs" />
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\MC_CrearUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\MC_CrearUsuario.Designer.cs">
+      <DependentUpon>MC_CrearUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Inicio\MC_Iniciador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Inicio\MC_Iniciador.Designer.cs">
+      <DependentUpon>MC_Iniciador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Inicio\MC_Iniciador2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Inicio\MC_Iniciador2.Designer.cs">
+      <DependentUpon>MC_Iniciador2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Menu\frm_ProgressBar_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Menu\frm_ProgressBar_Inicio.Designer.cs">
+      <DependentUpon>frm_ProgressBar_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Historia_Clinica\frm_Registrar_Historial_Clinico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Historia_Clinica\frm_Registrar_Historial_Clinico.Designer.cs">
+      <DependentUpon>frm_Registrar_Historial_Clinico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Historia_Clinica\frm_Ver_Historia_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Historia_Clinica\frm_Ver_Historia_01.Designer.cs">
+      <DependentUpon>frm_Ver_Historia_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Menu\Mc_Inicio_Sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Menu\Mc_Inicio_Sesion.Designer.cs">
+      <DependentUpon>Mc_Inicio_Sesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Menu\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Menu\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Listar_Proveedores_Orden_Compra.cs" />
+    <Compile Include="Clases\Listar_Productos_Servicios_Factura.cs" />
+    <Compile Include="Clases\LISTAR_SERVICIOS.cs" />
+    <Compile Include="frm_Report_FACS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Report_FACS.Designer.cs">
+      <DependentUpon>frm_Report_FACS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VENTAS_CRUZADAS_POR_AÑOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VENTAS_CRUZADAS_POR_AÑOS.Designer.cs">
+      <DependentUpon>frm_VENTAS_CRUZADAS_POR_AÑOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Ventas_Cruzadas_Por_Tipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Ventas_Cruzadas_Por_Tipo.Designer.cs">
+      <DependentUpon>frm_Ventas_Cruzadas_Por_Tipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Ver_Comprobante_Recepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Ver_Comprobante_Recepcion.Designer.cs">
+      <DependentUpon>frm_Ver_Comprobante_Recepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VER_FACTURA_ELECTRONICA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VER_FACTURA_ELECTRONICA.Designer.cs">
+      <DependentUpon>frm_VER_FACTURA_ELECTRONICA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\ListarIva_recepcion.cs" />
+    <Compile Include="Clases\ListarProductosDATA.cs" />
+    <Compile Include="Clases\Listar_Productos_Recepcion.cs" />
+    <Compile Include="Formularios_De_Notificaciones\messageboxAccionOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Notificaciones\messageboxAccionOrden.Designer.cs">
+      <DependentUpon>messageboxAccionOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Notificaciones\MessageBox_Campos_Vacios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Notificaciones\MessageBox_Campos_Vacios.Designer.cs">
+      <DependentUpon>MessageBox_Campos_Vacios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Persona.cs" />
+    <Compile Include="Clases\Personalizacion.cs" />
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\MessaggeBox_Usuario_Incorrecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\MessaggeBox_Usuario_Incorrecto.Designer.cs">
+      <DependentUpon>MessaggeBox_Usuario_Incorrecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\messge_Usuario_sin_permiso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Proveedores\Formularios_De_Usuarios\messge_Usuario_sin_permiso.Designer.cs">
+      <DependentUpon>messge_Usuario_sin_permiso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_De_Personal\Personal_Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Personal\Personal_Registro.Designer.cs">
+      <DependentUpon>Personal_Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Program.cs" />
+    <Compile Include="Clases\Listar_Medicamentos_DATA.cs" />
+    <Compile Include="Clases\Listar_Ofertas.cs" />
+    <Compile Include="frm_VER_HISTORIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VER_HISTORIA.Designer.cs">
+      <DependentUpon>frm_VER_HISTORIA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Ver_Registrar_Historial_Clinico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Ver_Registrar_Historial_Clinico.Designer.cs">
+      <DependentUpon>frm_Ver_Registrar_Historial_Clinico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VER_TOP_25_PRODUCTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VER_TOP_25_PRODUCTOS.Designer.cs">
+      <DependentUpon>frm_VER_TOP_25_PRODUCTOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VER_TOP_5_POR_TIPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VER_TOP_5_POR_TIPOS.Designer.cs">
+      <DependentUpon>frm_VER_TOP_5_POR_TIPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VER_TOP_GLOBAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VER_TOP_GLOBAL.Designer.cs">
+      <DependentUpon>frm_VER_TOP_GLOBAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listar_Empleados_RECETA.cs" />
+    <Compile Include="Listar_Medicamentos_Historial_Clinico.cs" />
+    <Compile Include="Formularios_De_Notificaciones\MessageBox_Accion_Combos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_De_Notificaciones\MessageBox_Accion_Combos.Designer.cs">
+      <DependentUpon>MessageBox_Accion_Combos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listar_Recepciones.cs" />
+    <Compile Include="LISTAR_RECETAS_FRM_OPCION.cs" />
+    <Compile Include="MessageBox_Oferta_Accion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBox_Oferta_Accion.Designer.cs">
+      <DependentUpon>MessageBox_Oferta_Accion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmr_RECETA_VER.resx">
+      <DependentUpon>fmr_RECETA_VER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Proveedores\Formularios_De_Usuarios\fmr_MisDatos_Usuario.resx">
+      <DependentUpon>fmr_MisDatos_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RECEPCION_PRODUCTOS_CRUZADA.resx">
+      <DependentUpon>Form_RECEPCION_PRODUCTOS_CRUZADA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAJUSTES.resx">
+      <DependentUpon>frmAJUSTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Clientes\frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Clientes\frmCliente_Agregar-Modificar.resx">
+      <DependentUpon>frmCliente_Agregar-Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Historia_Clinica\frm_Accion_Historia_Clinica.resx">
+      <DependentUpon>frm_Accion_Historia_Clinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Citas\frm_Agregar_Cita.resx">
+      <DependentUpon>frm_Agregar_Cita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Productos\frmCompra_Productos.resx">
+      <DependentUpon>frmCompra_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCombos.resx">
+      <DependentUpon>frmCombos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearRecetaMedica.resx">
+      <DependentUpon>frmCrearRecetaMedica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrear_Modiciar_Medicamento.resx">
+      <DependentUpon>frmCrear_Modiciar_Medicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatos_Veterinaria.resx">
+      <DependentUpon>frmDatos_Veterinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturacion.resx">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Productos\frmNuevoProducto.resx">
+      <DependentUpon>frmNuevoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Productos\frmServicios.resx">
+      <DependentUpon>frmServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Productos\frmServicios_Agregar_Modificar.resx">
+      <DependentUpon>frmServicios_Agregar_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Notificaciones\frm_Ayuda_FDTGV.resx">
+      <DependentUpon>frm_Ayuda_FDTGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_Configuracion.resx">
+      <DependentUpon>frm_Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_config_Usuarios.resx">
+      <DependentUpon>frm_config_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Pacientes\frm_Especies_Razas.resx">
+      <DependentUpon>frm_Especies_Razas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Clientes\frm_MC_Crear-Modificar_Cliente.resx">
+      <DependentUpon>frm_MC_Crear-Modificar_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Citas\frm_Citas.resx">
+      <DependentUpon>frm_Citas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Citas\frm_Cita_Pospuesta.resx">
+      <DependentUpon>frm_Cita_Pospuesta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Citas\frm_Cita_Terminada.resx">
+      <DependentUpon>frm_Cita_Terminada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Citas\frm_Editar_CIta.resx">
+      <DependentUpon>frm_Editar_CIta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_Editar_Usuario.resx">
+      <DependentUpon>frm_Editar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Historia_Clinica\frm_Historia_Clinica.resx">
+      <DependentUpon>frm_Historia_Clinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Menu\frm_MC_Inicio.resx">
+      <DependentUpon>frm_MC_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Proveedores\frm_MC_Modificar-CrearProveedor.resx">
+      <DependentUpon>frm_MC_Modificar-CrearProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Personal\frm_MC_Modificar-Crear_Personal.resx">
+      <DependentUpon>frm_MC_Modificar-Crear_Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Pacientes\frm_MC_Paciente.resx">
+      <DependentUpon>frm_MC_Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Pacientes\frm_MC_Paciente_Agregar_Modificar.resx">
+      <DependentUpon>frm_MC_Paciente_Agregar_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Proveedores\Formularios_De_Usuarios\frm_MC_Permisos_Usuarios.resx">
+      <DependentUpon>frm_MC_Permisos_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Personal\frm_MC_Personal.resx">
+      <DependentUpon>frm_MC_Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Productos\frm_Categorias.resx">
+      <DependentUpon>frm_Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJAULAS.resx">
+      <DependentUpon>frmJAULAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListar_Empleados_Receta.resx">
+      <DependentUpon>frmListar_Empleados_Receta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListar_Medicamentos_RECETA.resx">
+      <DependentUpon>frmListar_Medicamentos_RECETA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMENU_IVAS.resx">
+      <DependentUpon>frmMENU_IVAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificar_Veterinaria.resx">
+      <DependentUpon>frmModificar_Veterinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNOVEDADES_DEL_DIA.resx">
+      <DependentUpon>frmNOVEDADES_DEL_DIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfertas_Productos.resx">
+      <DependentUpon>frmOfertas_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOPCION_RECETAS.resx">
+      <DependentUpon>frmOPCION_RECETAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecintos.resx">
+      <DependentUpon>frmRecintos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVACUNAScs.resx">
+      <DependentUpon>frmVACUNAScs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CITA_ESTADISTICA.resx">
+      <DependentUpon>frm_CITA_ESTADISTICA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Comprobantes_Recepcion.resx">
+      <DependentUpon>frm_Comprobantes_Recepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Detalles_de_combos.resx">
+      <DependentUpon>frm_Detalles_de_combos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FACTURA_ELECTRONICAXD.resx">
+      <DependentUpon>frm_FACTURA_ELECTRONICAXD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Historia_Clinica_Nueva.resx">
+      <DependentUpon>frm_Historia_Clinica_Nueva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Listar_Paciente_Receta.resx">
+      <DependentUpon>frm_Listar_Paciente_Receta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MC_Producto_Agregar-Editar.resx">
+      <DependentUpon>frm_MC_Producto_Agregar-Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Productos\frm_MC_Produtos.resx">
+      <DependentUpon>frm_MC_Produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Proveedores\frm_MC_Proveedores.resx">
+      <DependentUpon>frm_MC_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Proveedores\Formularios_De_Usuarios\MC_CrearUsuario.resx">
+      <DependentUpon>MC_CrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Inicio\MC_Iniciador.resx">
+      <DependentUpon>MC_Iniciador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Inicio\MC_Iniciador2.resx">
+      <DependentUpon>MC_Iniciador2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Menu\frm_ProgressBar_Inicio.resx">
+      <DependentUpon>frm_ProgressBar_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Historia_Clinica\frm_Registrar_Historial_Clinico.resx">
+      <DependentUpon>frm_Registrar_Historial_Clinico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Historia_Clinica\frm_Ver_Historia_01.resx">
+      <DependentUpon>frm_Ver_Historia_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Menu\Mc_Inicio_Sesion.resx">
+      <DependentUpon>Mc_Inicio_Sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Menu\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Report_FACS.resx">
+      <DependentUpon>frm_Report_FACS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VENTAS_CRUZADAS_POR_AÑOS.resx">
+      <DependentUpon>frm_VENTAS_CRUZADAS_POR_AÑOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Ventas_Cruzadas_Por_Tipo.resx">
+      <DependentUpon>frm_Ventas_Cruzadas_Por_Tipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Ver_Comprobante_Recepcion.resx">
+      <DependentUpon>frm_Ver_Comprobante_Recepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VER_FACTURA_ELECTRONICA.resx">
+      <DependentUpon>frm_VER_FACTURA_ELECTRONICA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Notificaciones\messageboxAccionOrden.resx">
+      <DependentUpon>messageboxAccionOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Notificaciones\MessageBox_Campos_Vacios.resx">
+      <DependentUpon>MessageBox_Campos_Vacios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Proveedores\Formularios_De_Usuarios\MessaggeBox_Usuario_Incorrecto.resx">
+      <DependentUpon>MessaggeBox_Usuario_Incorrecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Proveedores\Formularios_De_Usuarios\messge_Usuario_sin_permiso.resx">
+      <DependentUpon>messge_Usuario_sin_permiso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Personal\Personal_Registro.resx">
+      <DependentUpon>Personal_Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VER_HISTORIA.resx">
+      <DependentUpon>frm_VER_HISTORIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Ver_Registrar_Historial_Clinico.resx">
+      <DependentUpon>frm_Ver_Registrar_Historial_Clinico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_De_Notificaciones\MessageBox_Accion_Combos.resx">
+      <DependentUpon>MessageBox_Accion_Combos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VER_TOP_25_PRODUCTOS.resx">
+      <DependentUpon>frm_VER_TOP_25_PRODUCTOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VER_TOP_5_POR_TIPOS.resx">
+      <DependentUpon>frm_VER_TOP_5_POR_TIPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VER_TOP_GLOBAL.resx">
+      <DependentUpon>frm_VER_TOP_GLOBAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox_Oferta_Accion.resx">
+      <DependentUpon>MessageBox_Oferta_Accion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report_Analitycs_TOP_25_PRODUCTOS.rdlc" />
+    <EmbeddedResource Include="Report_CITAS_ANALISIS_CIRCULAR.rdlc" />
+    <EmbeddedResource Include="Report_CITAS_ANALISIS_CIRCULAR2.rdlc" />
+    <EmbeddedResource Include="Report_Comprobante_Recepcion_Productos.rdlc" />
+    <EmbeddedResource Include="Report_CRUZADAS_POR_TIPOS.rdlc" />
+    <EmbeddedResource Include="Report_FACTURA_ELECTRONICA.rdlc" />
+    <EmbeddedResource Include="Report_GRAFICO_PASTEL_1_CITAS.rdlc" />
+    <EmbeddedResource Include="Report_Historia.rdlc" />
+    <EmbeddedResource Include="Report_Historial_Clinico.rdlc" />
+    <EmbeddedResource Include="Report_HISTORIA_CLINICA_NUEVA_MEJORADA.rdlc" />
+    <EmbeddedResource Include="Report_RECEPCION_COMPRA_CRUZADA.rdlc" />
+    <EmbeddedResource Include="Report_Recepcion_Productos_Factura.rdlc" />
+    <EmbeddedResource Include="Report_RECETA_NUEVA_XD.rdlc" />
+    <EmbeddedResource Include="Report_Registrar_Historial_Clinico.rdlc" />
+    <EmbeddedResource Include="Report_TOP_5_GLOBAL.rdlc" />
+    <EmbeddedResource Include="Report_TOP_5_GLOBAL_CIRCULAR.rdlc" />
+    <EmbeddedResource Include="Report_TOP_5_POR_TIPO.rdlc" />
+    <EmbeddedResource Include="Report_TOP_5_PRODUCTOS_CIRCULAR.rdlc" />
+    <EmbeddedResource Include="Report_TOP_5_PRODUCTOS_GRAFICA_XD.rdlc" />
+    <EmbeddedResource Include="Report_TOP_5_TIPOS_AREA.rdlc" />
+    <EmbeddedResource Include="Report_TOP_5_TIPOS_CIRCULAR.rdlc" />
+    <EmbeddedResource Include="Report_TOP_GLOBAL_AREAS.rdlc" />
+    <EmbeddedResource Include="Report_VENTAS_MENSUAL_AÑOS.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Analitycs_TOP_25_PRODUCTOS.xsc">
+      <DependentUpon>DataSet_Analitycs_TOP_25_PRODUCTOS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Analitycs_TOP_25_PRODUCTOS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Analitycs_TOP_25_PRODUCTOS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Analitycs_TOP_25_PRODUCTOS.xss">
+      <DependentUpon>DataSet_Analitycs_TOP_25_PRODUCTOS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Comprobante_Recepcion_Producto.xsc">
+      <DependentUpon>DataSet_Comprobante_Recepcion_Producto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Comprobante_Recepcion_Producto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Comprobante_Recepcion_Producto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Comprobante_Recepcion_Producto.xss">
+      <DependentUpon>DataSet_Comprobante_Recepcion_Producto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_CRUZADA_POR_TIPOS.xsc">
+      <DependentUpon>DataSet_CRUZADA_POR_TIPOS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_CRUZADA_POR_TIPOS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_CRUZADA_POR_TIPOS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_CRUZADA_POR_TIPOS.xss">
+      <DependentUpon>DataSet_CRUZADA_POR_TIPOS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_ESTADISTICA_CITAS.xsc">
+      <DependentUpon>DataSet_ESTADISTICA_CITAS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_ESTADISTICA_CITAS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ESTADISTICA_CITAS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_ESTADISTICA_CITAS.xss">
+      <DependentUpon>DataSet_ESTADISTICA_CITAS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_FACTURA_ELECTRONICA.xsc">
+      <DependentUpon>DataSet_FACTURA_ELECTRONICA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_FACTURA_ELECTRONICA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_FACTURA_ELECTRONICA.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_FACTURA_ELECTRONICA.xss">
+      <DependentUpon>DataSet_FACTURA_ELECTRONICA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_HISTORIA.xsc">
+      <DependentUpon>DataSet_HISTORIA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_HISTORIA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_HISTORIA.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_HISTORIA.xss">
+      <DependentUpon>DataSet_HISTORIA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Historial_Clinico.xsc">
+      <DependentUpon>DataSet_Historial_Clinico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Historial_Clinico.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Historial_Clinico.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Historial_Clinico.xss">
+      <DependentUpon>DataSet_Historial_Clinico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Historia_Clinica_Nuevo_Mejorada.xsc">
+      <DependentUpon>DataSet_Historia_Clinica_Nuevo_Mejorada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Historia_Clinica_Nuevo_Mejorada.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Historia_Clinica_Nuevo_Mejorada.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Historia_Clinica_Nuevo_Mejorada.xss">
+      <DependentUpon>DataSet_Historia_Clinica_Nuevo_Mejorada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_RECEPCION_PRODUCTOS_FACTURA.xsc">
+      <DependentUpon>DataSet_RECEPCION_PRODUCTOS_FACTURA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_RECEPCION_PRODUCTOS_FACTURA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_RECEPCION_PRODUCTOS_FACTURA.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_RECEPCION_PRODUCTOS_FACTURA.xss">
+      <DependentUpon>DataSet_RECEPCION_PRODUCTOS_FACTURA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_RECETA_NUEVA.xsc">
+      <DependentUpon>DataSet_RECETA_NUEVA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_RECETA_NUEVA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_RECETA_NUEVA.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_RECETA_NUEVA.xss">
+      <DependentUpon>DataSet_RECETA_NUEVA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Registrar_Historial_Clinico.xsc">
+      <DependentUpon>DataSet_Registrar_Historial_Clinico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Registrar_Historial_Clinico.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Registrar_Historial_Clinico.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Registrar_Historial_Clinico.xss">
+      <DependentUpon>DataSet_Registrar_Historial_Clinico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_REPECION_COMPRAS_CRUZADA.xsc">
+      <DependentUpon>DataSet_REPECION_COMPRAS_CRUZADA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_REPECION_COMPRAS_CRUZADA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_REPECION_COMPRAS_CRUZADA.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_REPECION_COMPRAS_CRUZADA.xss">
+      <DependentUpon>DataSet_REPECION_COMPRAS_CRUZADA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_TOP_5_POR_TIPOS.xsc">
+      <DependentUpon>DataSet_TOP_5_POR_TIPOS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_TOP_5_POR_TIPOS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_TOP_5_POR_TIPOS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_TOP_5_POR_TIPOS.xss">
+      <DependentUpon>DataSet_TOP_5_POR_TIPOS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_TOP_General.xsc">
+      <DependentUpon>DataSet_TOP_General.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_TOP_General.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_TOP_General.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_TOP_General.xss">
+      <DependentUpon>DataSet_TOP_General.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_VENTAS_CRUZADAS_POR_AÑOS.xsc">
+      <DependentUpon>DataSet_VENTAS_CRUZADAS_POR_AÑOS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_VENTAS_CRUZADAS_POR_AÑOS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_VENTAS_CRUZADAS_POR_AÑOS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_VENTAS_CRUZADAS_POR_AÑOS.xss">
+      <DependentUpon>DataSet_VENTAS_CRUZADAS_POR_AÑOS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-Programa-Taxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line_icon_126358.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_info_21970.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numeric_password_icon_149421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\see_eye_visible_icon_187826.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_icon_187899.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_121016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_see_visible_hidde_icon_187886.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-Programa-Taxi-blanco-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning_37097.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3338994-business-tools-money_106969.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BLANCO3338994-business-tools-money_106969.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xd3338994-business-tools-money_106969 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xdblanco3338994-business-tools-money_106969-%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busers_people_workers_customers_icon_124243.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recbeipt_returns_no_receipt_checklist_invoice_icon_191184.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b4634980-safe_122531.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binfo_about_information_icon_132735.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmbrisetting3_99522.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amarilloline_icon_126358.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QUESTION_37097.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diseño-de-usuario-administrador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amarilloline_icon_1263581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amarilloline_icon_1263582.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bclose_121016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning_370971.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin-título-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4230547-answer-interview-question_115026.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643764-back-backward-left-reply-turn_113415.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifs1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif-5-9442b2d923.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2ezgif-5-5efd268d73.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3ezgif-5-af4ed777c6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4ezgif-5-fc778f33eb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoAnimado.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
